@@ -1,15 +1,14 @@
 require 'sinatra'
+require 'shotgun'
 
-set :session_secret, 'super 
+set :session_secret, 'super'
 
-get '/' do
-  "Hello World"
+get "/" do
+  "hello"
 end
 
-get '/secret' do
-  "You found a treasure"
-end
-
-get '/secret/treasure' do
-  "Diamonds"
+get "/cat" do
+  "<div style = 'border: 1px dashed red'>
+    <img src='http://bit.ly/1eze8aE'>
+  </div>"
 end
